@@ -3,6 +3,7 @@ package Memorie;
 public class HDD extends Memorie implements IROM {
 
     private double _dimensiune;
+    private String  _brand;
 
     public HDD()
     {
@@ -12,10 +13,11 @@ public class HDD extends Memorie implements IROM {
     {
         this._dimensiune=dimensiune;
     }
-    public HDD (int capacitate, int frecventa, double dimensiune)
+    public HDD (int capacitate, int frecventa, double dimensiune, String brand)
     {
         super(capacitate, frecventa);
         this._dimensiune= dimensiune;
+        this._brand= brand;
 
     }
     public void setCapacitate(int capacitate){
@@ -46,7 +48,9 @@ public class HDD extends Memorie implements IROM {
     @Override
     public String toString()
     {   StringBuffer sb=new StringBuffer();
-        sb.append("Memorie HDD de capacitate ");
+        sb.append("Memorie HDD brand ");
+        sb.append(this._brand);
+        sb.append(" de capacitate");
         sb.append(super.getCapacitate());
         sb.append(", frecventa de: ");
         sb.append(super.getFrecventa());

@@ -3,6 +3,7 @@ package Memorie;
 public class SSD   extends Memorie implements IROM{
 
     private double _dimensiune;
+    private String  _brand;
 
     public SSD()
     {
@@ -14,10 +15,11 @@ public class SSD   extends Memorie implements IROM{
         super();
         this._dimensiune=dimensiune;
     }
-    public SSD(int capacitate, int frecventa, double dimensiune)
+    public SSD(int capacitate, int frecventa, double dimensiune, String brand)
     {
         super(capacitate, frecventa);
         this._dimensiune= dimensiune;
+        this._brand= brand;
     }
     public void setCapacitate(int capacitate){
 
@@ -44,7 +46,9 @@ public class SSD   extends Memorie implements IROM{
     @Override
     public String toString()
     {   StringBuffer sb=new StringBuffer();
-        sb.append("Memorie SSD de capacitate ");
+        sb.append("Memorie SSD brand ");
+        sb.append(this._brand);
+        sb.append(" de capacitate");
         sb.append(super.getCapacitate());
         sb.append(", frecventa de: ");
         sb.append(super.getFrecventa());

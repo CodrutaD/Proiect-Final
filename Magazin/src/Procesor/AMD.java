@@ -1,10 +1,10 @@
 package Procesor;
 
 public class AMD implements IProcesor{
-    public static final String RYZEN3= "Ryzen 3";
-    public static final String RYZEN5= "Ryzen 5";
-    public static final String RYZEN7= "Ryzen 7";
-    public static final String RYZEN9= "Ryzen 9";
+    public static final String RYZEN3= "AMD Ryzen 3";
+    public static final String RYZEN5= "AMD Ryzen 5";
+    public static final String RYZEN7= "AMD Ryzen 7";
+    public static final String RYZEN9= "AMD Ryzen 9";
     private String _model;
     private int _numar_nuclee;
     private int _frecventa;
@@ -72,11 +72,13 @@ public class AMD implements IProcesor{
     public String toString()
     {
         StringBuffer sb= new StringBuffer();
-        sb.append("Procesor Intel Core I3 cu numar de nuclee: ");
+        sb.append("Procesor model ");
+        sb.append(this._model);
+        sb.append(" cu numar de nuclee ");
         sb.append(this._numar_nuclee);
-        sb.append(", cu frecventa de ");
+        sb.append(" , cu frecventa de ");
         sb.append(this._frecventa);
-        sb.append("si suport de memorie ");
+        sb.append(" si suport de memorie ");
         sb.append(this._suport_memorie);
         return sb.toString();
     }

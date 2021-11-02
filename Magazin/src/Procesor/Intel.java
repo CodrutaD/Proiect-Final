@@ -73,9 +73,11 @@ public class Intel implements IProcesor{
     public String toString()
     {
         StringBuffer sb= new StringBuffer();
-        sb.append("Procesor Intel Core I3 cu numar de nuclee: ");
+        sb.append("Procesor  model:  ");
+        sb.append(this._model);
+        sb.append("  cu numar de nuclee ");
         sb.append(this._numar_nuclee);
-        sb.append(", cu frecventa de ");
+        sb.append(" , cu frecventa de ");
         sb.append(this._frecventa);
         sb.append("si suport de memorie ");
         sb.append(this._suport_memorie);

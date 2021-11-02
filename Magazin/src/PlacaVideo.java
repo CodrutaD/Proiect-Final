@@ -58,15 +58,15 @@ public class PlacaVideo {
 
     public String toString()
     {   StringBuffer sb=new StringBuffer();
-        sb.append("Procesor de la: ");
+        sb.append("Placa video de la: ");
         sb.append(this._brand);
-        sb.append(" fabricat cu: ");
+        sb.append(" cu tehnologie de fabricatie de ");
         sb.append(this._tech_fabr);
-        sb.append(" cu frecventa:; ");
+        sb.append(" nm ,  cu frecventa: ");
         sb.append(this._frecventa_memorie);
-        sb.append(" capacitatea de: ");
+        sb.append("  MHz, capacitatea de: ");
         sb.append(this._capacitate_memorie);
-        sb.append("tipul memoriei: ");
+        sb.append("  GB si tipul memoriei: ");
         sb.append(this._tip_memorie);
         return sb.toString();
     }

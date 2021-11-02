@@ -25,7 +25,14 @@ public class RAM extends Memorie {
 
         super.setFrecventa(frecventa);
     }
-
+    public String getTip()
+    {
+        return this._tip;
+    }
+    public void setTip(String tip)
+    {
+        this._tip= tip;
+    }
     public int getFrecventa(){
         return super.getFrecventa();
     }
